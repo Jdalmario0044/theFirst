@@ -1,0 +1,12 @@
+{
+  "name": "thefirst",
+  "version": "1.0.0",
+  "description": "A demo of a landing page.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["Landing page","Demo"],
+  "author": "Jose Almario <josealmario084@gmail.com>",
+  "license": "MIT"
+}

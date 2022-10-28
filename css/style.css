@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@1,700&family=Roboto:wght@100;400;900&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+}
+/* MENU */
+.menu .logo {
+    color: white;
+    font-size: 2.5rem;
+    line-height: 7rem;
+    font-weight: 900;
+    margin-left: 2rem;
+}
+.menu ul {
+    float: right;
+    margin-right: 1rem;
+}
+.menu ul li {
+    display: inline-block;
+    margin: 3rem 1.5rem;
+}
+.menu ul li a {
+    font-size: 1.6rem;
+    padding: 0.8rem 0.6rem;
+    text-decoration: none;
+    color: white;
+}
+.menu ul li a:hover {
+    color: #038C4C;
+}
+.menu {
+    background-color: black;
+}
+/* BANNER */
+.banner {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    left: 0;
+    top: 0;
+    background: url(https://i.imgur.com/TruW282.jpg)
+    no-repeat center center/cover;
+    z-index: 1  ;
+}
+.banner .texto_banner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2rem;
+    min-width: 40%;
+    min-height: 20%;
+    border-radius: 2rem;
+    background-color: rgba(0, 0, 0, 0.7 );
+}
+.banner .texto_banner p,
+.banner .texto_banner h1 {
+    color: white;
+    margin: 0;
+    text-align: center;
+}
+.banner .texto_banner h1 {
+    font-size: 2.8rem;
+}
+/* ¿QUIENES SOMOS? */
+.nosotros {
+    padding: 1rem 10rem;
+    margin: 4rem 0;
+    text-align: center;
+}
+.titulo {
+    font-family: 'Amaranth', sans-serif;
+    font-size: 3.3rem;
+    text-align: center;
+    letter-spacing: 0.1rem;
+    word-spacing: 0.3rem;
+}
+.linea {
+    width: 20rem;
+    height: 0.6rem;
+    background-color: #038C4C;
+    margin: 1rem auto;
+    margin-bottom: 3rem;
+    border-radius: 0.5rem;
+}
+.boton {
+    color: white;
+    background-color: #038C4C;
+    font-weight: bolder;
+    display: block;
+    width: 20rem;
+    height: 4rem;
+    margin: 4rem auto 0;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    line-height: 1.5rem;
+    text-align: center;
+    text-decoration: none;
+}
+.boton:hover {
+    background-color: #01401C;
+    box-shadow: 0.5rem 0.5rem 0.5rem gray;
+}
+/* SERVICIOS */
+.servicios {
+    margin: 5rem 7rem;
+}
+.servicios .contenido {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 2rem;
+}
+.imagen img {
+    width: 100%;
+    height: 25rem;
+    border-radius: 2rem;
+    margin: 0 auto;
+    display: block;
+    object-fit: cover;
+}
+.imagen p {
+    text-align: center;
+    font-weight: bolder;
+    margin: 2rem 0;
+}
+.boton2 {
+    color: white;
+    background-color: #038C4C;
+    width: 10rem;
+    margin: auto;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    text-align: center;
+}
+.boton2:hover {
+    background-color: #01401C;
+    box-shadow: 0.5rem 0.5rem 0.5rem gray;
+}
+/* FOOTER */
+.redes {
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 10rem;
+    padding: 2rem;
+}
+.espacio {
+    margin: 2rem 2rem;
+}
+/* RESPONSIVE */
+@media (max-width: 700px) {
+    .hamburger {
+        width: 3rem;
+        position: absolute;
+        top: 4rem;
+        transform: translateY(-50%);
+    }
+    .hamburger span {
+        margin-left: 0.5rem;
+        margin-bottom: 0.3rem;
+        background-color: white;
+        display: block;
+        height: 0.3rem;
+    }
+    .menu .logo {
+        margin-left: 5rem;
+    }
+    .menu {
+        position: relative;
+    }
+    nav ul {
+        float: none;
+        width: 30rem;
+        padding: 0;
+        padding-top: 6rem;
+        margin: 0;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        background-color: black;
+        transition: 1s;
+        left: -100%;
+        z-index: 2;
+    }
+    .open {
+        left: 0;
+    }
+    .menu ul li {
+        display: block;
+        float: none;
+
+    }
+    .menu ul li a {
+        font-size: 1.8rem;
+        padding: 1rem 4rem;
+    }
+    .close {
+        display: block;
+        position: absolute;
+        width: 5rem;
+        height: 5rem;
+        top: 1.5rem;
+        right: 1rem;
+        color: white;
+        font-size: 3rem;
+        cursor: pointer;
+    }
+}
+@media (max-width: 850px) {
+    .servicios .contenido {
+        grid-template-columns: auto auto;
+    }
+}
+@media (max-width: 550px) {
+    .servicios .contenido {
+        grid-template-columns: auto;
+    }
+}
